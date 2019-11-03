@@ -1,0 +1,136 @@
+2019-11-03 13:54:31.696 [main] INFO  com.course.Application - Starting Application on wangchunyandeMacBook-Pro.local with PID 70281 (/Users/wangchunyan/Programs/AutoTest/Chapter13/target/classes started by wangchunyan in /Users/wangchunyan/Programs/AutoTest)
+2019-11-03 13:54:31.698 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2019-11-03 13:54:32.236 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2019-11-03 13:54:32.408 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$259609bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-03 13:54:32.545 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-03 13:54:32.561 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-03 13:54:32.561 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-03 13:54:32.611 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-03 13:54:32.612 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 890 ms
+2019-11-03 13:54:32.879 [main] WARN  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apiModelPropertyPropertyBuilder': Resolution of declared constructors on bean Class [springfox.documentation.swagger.schema.ApiModelPropertyPropertyBuilder] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69] failed; nested exception is java.lang.NoClassDefFoundError: springfox/documentation/spring/web/DescriptionResolver
+2019-11-03 13:54:32.881 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-11-03 13:54:32.889 [main] INFO  o.s.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-11-03 13:54:32.894 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'apiModelPropertyPropertyBuilder': Resolution of declared constructors on bean Class [springfox.documentation.swagger.schema.ApiModelPropertyPropertyBuilder] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69] failed; nested exception is java.lang.NoClassDefFoundError: springfox/documentation/spring/web/DescriptionResolver
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:284)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1184)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.course.Application.main(Application.java:15)
+Caused by: java.lang.NoClassDefFoundError: springfox/documentation/spring/web/DescriptionResolver
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3142)
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2362)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:279)
+	... 18 common frames omitted
+Caused by: java.lang.ClassNotFoundException: springfox.documentation.spring.web.DescriptionResolver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:583)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 22 common frames omitted
+2019-11-03 14:00:23.111 [main] INFO  com.course.Application - Starting Application on wangchunyandeMacBook-Pro.local with PID 70439 (/Users/wangchunyan/Programs/AutoTest/Chapter13/target/classes started by wangchunyan in /Users/wangchunyan/Programs/AutoTest)
+2019-11-03 14:00:23.113 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2019-11-03 14:00:23.637 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2019-11-03 14:00:23.830 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bc9d7b54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-03 14:00:23.987 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-03 14:00:24.004 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-03 14:00:24.005 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-03 14:00:24.066 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-03 14:00:24.066 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 922 ms
+2019-11-03 14:00:24.474 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-03 14:00:24.575 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-03 14:00:24.682 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-11-03 14:00:24.721 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-11-03 14:00:24.732 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-11-03 14:00:24.766 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-11-03 14:00:24.891 [main] ERROR springfox.documentation.swagger.readers.operation.OperationHttpMethodReader - Invalid http method: POStValid ones are [[Lorg.springframework.web.bind.annotation.RequestMethod;@5086623f]
+java.lang.IllegalArgumentException: No enum constant org.springframework.web.bind.annotation.RequestMethod.POSt
+	at java.base/java.lang.Enum.valueOf(Enum.java:264)
+	at org.springframework.web.bind.annotation.RequestMethod.valueOf(RequestMethod.java:35)
+	at springfox.documentation.swagger.readers.operation.OperationHttpMethodReader.apply(OperationHttpMethodReader.java:49)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsManager.operation(DocumentationPluginsManager.java:120)
+	at springfox.documentation.spring.web.readers.operation.ApiOperationReader.read(ApiOperationReader.java:73)
+	at springfox.documentation.spring.web.scanners.CachingOperationReader$1.load(CachingOperationReader.java:50)
+	at springfox.documentation.spring.web.scanners.CachingOperationReader$1.load(CachingOperationReader.java:48)
+	at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3628)
+	at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2336)
+	at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2295)
+	at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2208)
+	at com.google.common.cache.LocalCache.get(LocalCache.java:4053)
+	at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:4057)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4986)
+	at com.google.common.cache.LocalCache$LocalLoadingCache.getUnchecked(LocalCache.java:4992)
+	at springfox.documentation.spring.web.scanners.CachingOperationReader.read(CachingOperationReader.java:57)
+	at springfox.documentation.spring.web.scanners.ApiDescriptionReader.read(ApiDescriptionReader.java:70)
+	at springfox.documentation.spring.web.scanners.ApiListingScanner.scan(ApiListingScanner.java:134)
+	at springfox.documentation.spring.web.scanners.ApiDocumentationScanner.scan(ApiDocumentationScanner.java:71)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.scanDocumentation(DocumentationPluginsBootstrapper.java:101)
+	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:893)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.course.Application.main(Application.java:15)
+2019-11-03 14:00:24.931 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-03 14:00:24.936 [main] INFO  com.course.Application - Started Application in 2.027 seconds (JVM running for 2.684)
+2019-11-03 14:02:26.270 [Thread-2] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-11-03 14:02:26.272 [Thread-2] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-03 14:02:29.364 [main] INFO  com.course.Application - Starting Application on wangchunyandeMacBook-Pro.local with PID 70454 (/Users/wangchunyan/Programs/AutoTest/Chapter13/target/classes started by wangchunyan in /Users/wangchunyan/Programs/AutoTest)
+2019-11-03 14:02:29.366 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2019-11-03 14:02:29.854 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2019-11-03 14:02:29.998 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1702bab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-03 14:02:30.134 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2019-11-03 14:02:30.150 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-03 14:02:30.151 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-11-03 14:02:30.204 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-03 14:02:30.204 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 815 ms
+2019-11-03 14:02:30.499 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-11-03 14:02:30.570 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-03 14:02:30.664 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-11-03 14:02:30.699 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-11-03 14:02:30.709 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-11-03 14:02:30.738 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-11-03 14:02:30.857 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-03 14:02:30.860 [main] INFO  com.course.Application - Started Application in 1.7 seconds (JVM running for 2.274)
+2019-11-03 14:02:40.390 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-03 14:02:40.391 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-11-03 14:02:40.397 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2019-11-03 14:03:16.297 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-11-03 14:03:16.298 [http-nio-8080-exec-7] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-11-03 14:03:16.713 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-11-03 14:03:16.753 [http-nio-8080-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是1
+2019-11-03 14:03:16.753 [http-nio-8080-exec-7] INFO  com.course.controller.UserManager - 登陆的用户是：zhangsan
+2019-11-03 14:06:54.528 [http-nio-8080-exec-9] INFO  com.course.controller.UserManager - 查询到的结果是1
+2019-11-03 14:06:54.528 [http-nio-8080-exec-9] INFO  com.course.controller.UserManager - 登陆的用户是：zhangsan
+2019-11-03 14:07:53.239 [http-nio-8080-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是1
+2019-11-03 14:07:53.239 [http-nio-8080-exec-2] INFO  com.course.controller.UserManager - 登陆的用户是：zhangsan
+2019-11-03 14:09:32.836 [http-nio-8080-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是1
+2019-11-03 14:09:32.836 [http-nio-8080-exec-4] INFO  com.course.controller.UserManager - 登陆的用户是：zhangsan
+2019-11-03 14:10:26.392 [http-nio-8080-exec-6] INFO  com.course.controller.UserManager - 查询到的结果是1
+2019-11-03 14:10:26.393 [http-nio-8080-exec-6] INFO  com.course.controller.UserManager - 登陆的用户是：zhangsan
