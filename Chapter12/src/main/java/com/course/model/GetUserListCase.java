@@ -3,9 +3,10 @@ package com.course.model;
 import lombok.Data;
 
 @Data
-public class LoginCase {
-    private int id;
+public class GetUserListCase {
     private String userName;
-    private String passWord;
+    private int age;
+    private int sex;
     private String expected;
+
 }

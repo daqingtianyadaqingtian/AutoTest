@@ -19,6 +19,10 @@ public class ConfigFile {
             uri = bundle.getString("login.uri");
         }
 
+        if(name == InterfaceName.ADDUSER){
+            uri = bundle.getString("addUser.uri");
+        }
+
         testUrl = adddress + uri;
 
         return testUrl;

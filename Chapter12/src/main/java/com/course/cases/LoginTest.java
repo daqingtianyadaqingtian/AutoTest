@@ -22,11 +22,11 @@ import java.io.IOException;
 public class LoginTest {
     @BeforeTest(groups = "loginTrue",description = "测试准备工作，获取httpclient对象")
     public void beforeTest(){
-       // TestConfig.getUserInfoUrl = ConfigFile.getUrl(InterfaceName.GETUSERINFO);
-       // TestConfig.getUserListUrl = ConfigFile.getUrl(InterfaceName.GETUSERLIST);
-       // TestConfig.addUserUrl = ConfigFile.getUrl(InterfaceName.ADDUSERINFO);
+        TestConfig.getUserInfoUrl = ConfigFile.getUrl(InterfaceName.GETUSERINFO);
+        TestConfig.getUserListUrl = ConfigFile.getUrl(InterfaceName.GETUSERLIST);
+        TestConfig.addUserUrl = ConfigFile.getUrl(InterfaceName.ADDUSER);
         TestConfig.loginUrl = ConfigFile.getUrl(InterfaceName.LOGIN);
-       // TestConfig.updateUserInfoUrl = ConfigFile.getUrl(InterfaceName.UPDATEUSERINFO);
+        TestConfig.updateUserInfoUrl = ConfigFile.getUrl(InterfaceName.UPDATEUSERINFO);
 
         TestConfig.defaultHttpClient = new DefaultHttpClient();
     }
@@ -53,7 +53,7 @@ public class LoginTest {
         HttpPost post = new HttpPost(TestConfig.loginUrl);
         JSONObject param = new JSONObject();
         param.put("userName",loginCase.getUserName());
-        param.put("password",loginCase.getPassword());
+        param.put("passWord",loginCase.getPassWord());
 
         post.setHeader("content-type","application/json");
 
